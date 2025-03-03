@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  OC-Project
+//
+//  Created by 卢梓源 on 2020/12/15.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Constant.h"
+#import "Colors.h"
+#import "Macros.h"
+#import "NSObject+Category.h"
+#import "NSString+Category.h"
+#import "UIColor+Category.h"
+#import "UIView+Frame.h"
+#import "UserInfo.h"
+#import "AFHttpClient.h"
+#import "StartInfoModel.h"
+
+#import <AFNetworking.h>
+#import <Masonry.h>
+#import <SDWebImage.h>
+#import <MJRefresh.h>
+#import <MJExtension.h>
+#import <MBProgressHUD.h>
+#import <SDWebImage.h>
+
+//Block回调
+typedef void (^CallBackVoid)(void);
+typedef void (^CallBackBool)(BOOL isTrue);
+typedef void (^CallBackIndex)(NSInteger index);
+typedef void (^CallBackString)(NSString *string);
+typedef void (^CallBackObj)(id obj);
+typedef void (^CompletionHandler)(BOOL isSuccess, NSString *message, id obj);
+
+#endif /* PrefixHeader_pch */
